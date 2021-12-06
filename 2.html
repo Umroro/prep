@@ -4,40 +4,9 @@
         <title>Web1 - CSS</title>
         <meta charset="utf-8">
         <!--웹 페이지를 utf-8 형식으로 저장 한다는 의미-->
-        <style>
-            body {
-                margin: 0;
-            }
-            /* 우선순위 : ID > Class > a, h1 */
-            a {
-                color: black;
-                text-decoration: none;
-            }
-            h1 {
-                font-size: 45px;
-                text-align: center;
-                border-bottom: 1px gray solid;
-                margin: 0;
-                padding: 20px;
-            }
-            ol {
-                border-right: 1px gray solid;
-                width: 100px;
-                margin: 0;
-                padding: 20px;
-            }
-            #grid {
-                display: grid;
-                grid-template-columns: 150px 1fr;
-            }
-            #grid ol {
-                padding-left: 33px;
-            }
-            /* 부모 태그가 그리드(ID)이고 자식 태그가 ol인 태그에 적용 */
-            #article {
-                padding-left: 25px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <!--모든 페이지를 div 태그로 동일하게 적용했다면 link 태그를 이용해서 style.css 파일을 불러와 동일하게 적용 가능
+            * 코드 재사용에 매우 중요-->
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
