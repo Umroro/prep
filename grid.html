@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #grid {
+                border: 5px pink solid;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            div {
+                border: 5px gray solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div>NAVIGATION</div>
+            <div>ARTICLE</div>
+            <!--디자인만을 위해 사용하는 태그는 무색무취(의미가 없음)
+            div 태그는 block(화면전체)값과 동일 하다.
+            span 태그는 inline(자기 자신 만큼)값과 동일 하다.-->
+        </div>
+        <!--2개의 태그를 나란히 배치하기 위해서는 2개의 태그를 감싸는 부모 태그가 필요하다.
+            디자인의 목적만으로 <div id = "grid"> 라는 태그를 만들었다.-->
+    </body>
+</html>
