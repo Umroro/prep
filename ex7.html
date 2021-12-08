@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Loop & Array</h1>
+    <!--반복문 & 배열-->
+    <script>
+        var coworkers = ['yongil','012','umroro','roro'];
+    </script>
+    <h2>Co workers</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while (i < coworkers.length) {
+                /* 변수 내용이 변하더라도 변수명.length를 이용하면 변경된 값도 자동으로 적용한다. */
+                document.write('<li>'+coworkers[i]+'</li>')
+                /* 변수명 뒤에 []에 변수 자리 값이 아닌 i 변수를 넣음으로 써 i 변수가 적용된다. */
+                i = i + 1;
+            }
+        </script>
+
+        <script>
+            var i = 0;
+            while (i < coworkers.length) {
+                document.write('<li><a href="http://naver.com/'+coworkers[i]+'">'+coworkers[i]+'</li>')
+                    /* 링크 적용이 필요하다면 <a href="+링크명'cowrkers[i]+(변수명 작성)'">를 작성 시 링크가 적용된다.*/
+                i = i + 1;
+            }
+        </script>
+    </ul>
+</body>
+</html>

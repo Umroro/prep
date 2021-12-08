@@ -10,6 +10,36 @@
     <body>
         <h1><a href="index.html">WEB</a></h1>
 
+        <input type="button" value="night" onclick="
+            var target = document.querySelector('body')
+            if(this.value === 'night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                this.value = 'day';
+
+                var alist = document.querySelectorAll('a');
+                /* alit 변수는 모든 a 태그들을 가져온다. */
+                var i = 0;
+                while (i < alist.length) {
+                /* 변수 뒤에 .length를 붙임으로 몇개의 배열이 있는지 자동으로 알 수 있다. */ 
+                    alist[i].style.color = 'powderblue'
+                    i = i + 1;
+                }
+            }
+            else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                this.value = 'night';
+
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'blue'
+                    i = i + 1;
+                }
+            }
+        ">
+
         <div id="grid">
             <ol>
                 <li><a href="1.html">HTML</a></li> 

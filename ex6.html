@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Loop</h1>
+    <!--반복문-->
+    <ul>
+        <script>
+            document.write('<li>1</li>')
+            var i = 0;
+            /* 변수 i = 0 이다.*/
+            while (i < 3) {
+            /* 반복문 문법(키워드)는 while이라 하며 i가 3보다 작을 경우 다음으로 넘어 간다.
+            조건문 안에는 불리언이 들어가기에 true/false를 생각하면 된다.*/
+            document.write('<li>2</li>')
+            document.write('<li>3</li>')
+            i = i + 1;
+            /* i=i+1; 조건이 없다면 무한 반복으로 인해 오류가 생긴다.*/
+            }
+            document.write('<li>4</li>')
+        </script>
+    </ul>
+</body>
+</html>
