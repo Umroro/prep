@@ -5,10 +5,16 @@
         <meta charset="utf-8">
         <!--웹 페이지를 utf-8 형식으로 저장 한다는 의미-->
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="colors.js"></script>
     </head>
 
     <body>
         <h1><a href="index.html">WEB</a></h1>
+
+        <input id="night_day" type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
 
         <div id="grid">
             <ol>

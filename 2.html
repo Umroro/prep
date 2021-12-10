@@ -7,9 +7,15 @@
         <link rel="stylesheet" href="style.css">
         <!--모든 페이지를 div 태그로 동일하게 적용했다면 link 태그를 이용해서 style.css 파일을 불러와 동일하게 적용 가능
             * 코드 재사용에 매우 중요-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="colors.js"></script>
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
+
+        <input id="night_day" type="button" value="night" onclick="
+            nightDayHandler(this);
+        ">
 
         <div id="grid">
             <ol>
